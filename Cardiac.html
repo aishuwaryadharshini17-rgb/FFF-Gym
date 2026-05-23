@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl" data-theme="dark">
 
 <head>
     <meta charset="utf-8">
@@ -69,60 +69,11 @@
     <!-- Topbar End -->
 
 
-    <!-- Brand & Contact Start -->
-     <div class="container-fluid py-4 px-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row align-items-center top-bar">
-            <div class="col-lg-4 col-md-12 text-center text-lg-start">
-                <a href="" class="navbar-brand d-flex align-items-center">
-                    <img src="img\logoo.png" alt="logo" style="height:90px; margin-right:10px;">
-                
-                </a>
-            </div>
-            <div class="col-lg-8 col-md-7 d-none d-lg-block">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                                <i class="far fa-clock text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <p class="mb-2">Opening Hour</p>
-                                <h6 class="mb-0">Mon - sat, 5.00 - 10:30pm</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                                <i class="fa fa-phone text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <p class="mb-2">Call Us</p>
-                                <h6 class="mb-0">+07100043</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                                <i class="far fa-envelope text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <p class="mb-2">Email Us</p>
-                                <h6 class="mb-0">fff@gym.com</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Brand & Contact End -->
-
-
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a href="#" class="navbar-brand ms-3 d-lg-none">MENU</a>
+        <a href="index.html" class="navbar-brand header-logo ms-3">
+            <img src="img/logoo.png" alt="Flusion Flow Fitness Logo">
+        </a>
         <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -133,7 +84,7 @@
                 <a href="Blog.html" class="nav-item nav-link">Blogs</a>
                 <a href="facilities.html" class="nav-item nav-link ">Facilities</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown ">Classes</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Classes</a>
                     <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
                         <a href="Cardiac.html" class="dropdown-item active">Cardiac</a>
                         <a href="Muscle Strengthening.html" class="dropdown-item">Muscle Strengthening</a>
@@ -143,7 +94,14 @@
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact Us</a>
             </div>
-            <a href="#" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Join now</a>
+            <div class="navbar-actions d-flex align-items-center gap-2">
+                <button type="button" class="theme-toggle-btn" data-theme-toggle aria-label="Toggle light and dark mode">
+                    <i class="fas fa-sun"></i>
+                    <span>Light</span>
+                </button>
+                <button type="button" class="rtl-toggle-btn" data-direction-toggle aria-label="Toggle RTL mode">RTL</button>
+                <a href="#" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Join now</a>
+            </div>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -363,8 +321,6 @@
             © 2026 Flusion Flow Fitness. All Rights Reserved.
         </p>
     </div>
-
-</div>
 <!-- Footer End -->
 
 
