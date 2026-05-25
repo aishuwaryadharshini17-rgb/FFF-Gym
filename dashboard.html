@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Dashboard | Flusion Flow Fitness</title>
+    <link href="img/logoo.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <a class="brand" href="index.html">
+                <img src="img/logoo.png" alt="Flusion Flow Fitness">
+                <div>
+                    <strong>FLUSION FLOW</strong>
+                    <span>FITNESS</span>
+                </div>
+            </a>
+
+            <nav class="side-nav" aria-label="Dashboard menu">
+                <a class="active" href="dashboard.html"><i class="fas fa-th-large"></i> Dashboard</a>
+                <a href="#members"><i class="fas fa-users"></i> Members</a>
+                <a href="#trainers"><i class="fas fa-user-tie"></i> Trainers</a>
+                <a href="#check-ins"><i class="far fa-calendar-check"></i> Attendance</a>
+                <a href="#revenue"><i class="far fa-credit-card"></i> Membership Plans</a>
+                <a href="#revenue"><i class="fas fa-wallet"></i> Payments</a>
+                <a href="#classes"><i class="fas fa-dumbbell"></i> Workouts &amp; Classes</a>
+                <a href="#reminders"><i class="fas fa-apple-alt"></i> Diet Plans</a>
+                <a href="#reminders"><i class="fas fa-running"></i> Equipment</a>
+                <a href="#check-ins"><i class="far fa-chart-bar"></i> Reports</a>
+                <a href="#reminders"><i class="far fa-comment-dots"></i> Messages <b>5</b></a>
+                <a href="index.html"><i class="fas fa-home"></i> Website Home</a>
+            </nav>
+
+            <div class="upgrade">
+                <i class="fas fa-crown"></i>
+                <h3>Upgrade to Pro</h3>
+                <p>Unlock member insights and smart fitness reports.</p>
+                <a href="#">Upgrade Now</a>
+            </div>
+        </aside>
+
+        <main class="main-panel">
+            <header class="dash-header">
+                <button class="menu-btn" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+                <div class="welcome">
+                    <h1>Welcome back, Srinivas <span>!</span></h1>
+                    <p>Keep pushing, your better self is worth it.</p>
+                </div>
+                <label class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="search" placeholder="Search members, classes...">
+                </label>
+                <button class="alert" aria-label="Notifications">
+                    <i class="far fa-bell"></i><span>3</span>
+                </button>
+                <div class="profile">
+                    <img src="img/team-1.jpg" alt="Admin Srinivas">
+                    <div><strong>Srinivas</strong><small>Admin</small></div>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </header>
+
+            <section class="dashboard-content">
+                <div class="content-title">
+                    <div>
+                        <p class="eyebrow">Fitness Management</p>
+                        <h2>Gym Dashboard</h2>
+                    </div>
+                    <button class="date-pill"><i class="far fa-calendar-alt"></i> 25 May 2026 <i class="fas fa-chevron-down"></i></button>
+                </div>
+
+                <section class="stats" aria-label="Gym performance summary">
+                    <article class="stat-card" id="members">
+                        <span class="stat-icon orange"><i class="fas fa-users"></i></span>
+                        <div><small>Total Members</small><strong>1,568</strong><p><em>+12%</em> vs last month</p></div>
+                    </article>
+                    <article class="stat-card">
+                        <span class="stat-icon purple"><i class="far fa-check-circle"></i></span>
+                        <div><small>Today Check-ins</small><strong>178</strong><p><em>+8%</em> vs yesterday</p></div>
+                    </article>
+                    <article class="stat-card">
+                        <span class="stat-icon green"><i class="fas fa-user-plus"></i></span>
+                        <div><small>New Members</small><strong>32</strong><p><em>+5%</em> this month</p></div>
+                    </article>
+                    <article class="stat-card" id="revenue">
+                        <span class="stat-icon red"><i class="fas fa-wallet"></i></span>
+                        <div><small>Monthly Revenue</small><strong>Rs. 2,45,000</strong><p><em>+15%</em> vs last month</p></div>
+                    </article>
+                    <article class="stat-card" id="trainers">
+                        <span class="stat-icon blue"><i class="fas fa-dumbbell"></i></span>
+                        <div><small>Active Trainers</small><strong>12</strong><p><em>+2</em> this month</p></div>
+                    </article>
+                </section>
+
+                <section class="overview-grid">
+                    <article class="panel members-panel">
+                        <h3>Membership Overview</h3>
+                        <div class="member-overview">
+                            <div class="donut"><div><strong>1,568</strong><span>Total</span></div></div>
+                            <ul>
+                                <li><i class="dot active-dot"></i><div>Active Members<strong>1,094 (70%)</strong></div></li>
+                                <li><i class="dot expired-dot"></i><div>Expired Members<strong>282 (18%)</strong></div></li>
+                                <li><i class="dot inactive-dot"></i><div>Inactive Members<strong>192 (12%)</strong></div></li>
+                            </ul>
+                        </div>
+                        <a class="panel-button" href="#">View Members</a>
+                    </article>
+
+                    <article class="panel chart-panel" id="check-ins">
+                        <div class="panel-heading">
+                            <h3>Check-in Activity <small>(This Week)</small></h3>
+                            <button>This Week <i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div class="line-chart" aria-label="Weekly check-in graph">
+                            <div class="scale"><span>100</span><span>80</span><span>60</span><span>40</span><span>20</span><span>0</span></div>
+                            <svg viewBox="0 0 580 238" role="img">
+                                <title>Gym weekly attendance activity</title>
+                                <defs>
+                                    <linearGradient id="activityFill" x1="0" x2="0" y1="0" y2="1">
+                                        <stop stop-color="#ff7a00" stop-opacity=".42"/>
+                                        <stop offset="1" stop-color="#ff7a00" stop-opacity=".04"/>
+                                    </linearGradient>
+                                </defs>
+                                <path class="area" d="M12 157 L103 111 L194 81 L285 99 L376 18 L467 65 L558 91 L558 225 L12 225 Z"/>
+                                <path class="graph-line" d="M12 157 L103 111 L194 81 L285 99 L376 18 L467 65 L558 91"/>
+                                <g class="nodes">
+                                    <circle cx="12" cy="157" r="5"/><circle cx="103" cy="111" r="5"/>
+                                    <circle cx="194" cy="81" r="5"/><circle cx="285" cy="99" r="5"/>
+                                    <circle cx="376" cy="18" r="5"/><circle cx="467" cy="65" r="5"/>
+                                    <circle cx="558" cy="91" r="5"/>
+                                </g>
+                            </svg>
+                            <div class="days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+                        </div>
+                    </article>
+
+                    <article class="panel classes-panel" id="classes">
+                        <h3>Popular Classes</h3>
+                        <ol>
+                            <li><i class="fas fa-dumbbell"></i><span>Strength Training</span><strong>38 Bookings</strong></li>
+                            <li><i class="fas fa-spa"></i><span>Yoga Flow</span><strong>26 Bookings</strong></li>
+                            <li><i class="fas fa-running"></i><span>Cardio Blast</span><strong>21 Bookings</strong></li>
+                            <li><i class="fas fa-music"></i><span>Zumba</span><strong>18 Bookings</strong></li>
+                            <li><i class="fas fa-fire-alt"></i><span>CrossFit</span><strong>15 Bookings</strong></li>
+                        </ol>
+                        <a class="panel-button" href="#">View All Classes</a>
+                    </article>
+                </section>
+
+                <section class="bottom-grid">
+                    <article class="panel attendance">
+                        <div class="panel-heading">
+                            <h3>Recent Member Check-ins</h3>
+                            <button>View All</button>
+                        </div>
+                        <div class="table-wrap">
+                            <table>
+                                <thead><tr><th>Member Name</th><th>Membership</th><th>Check-in Time</th><th>Status</th></tr></thead>
+                                <tbody>
+                                    <tr><td><img src="img/testimonial-1.jpg" alt=""> Rohit Kumar</td><td>Premium</td><td>07:45 AM</td><td class="checked">Checked In</td></tr>
+                                    <tr><td><img src="img/testimonial-2.jpg" alt=""> Anjali Sharma</td><td>Gold</td><td>08:12 AM</td><td class="checked">Checked In</td></tr>
+                                    <tr><td><img src="img/testimonial-3.jpg" alt=""> Vikram Singh</td><td>Premium</td><td>08:25 AM</td><td class="checked">Checked In</td></tr>
+                                    <tr><td><img src="img/testimonial-4.jpg" alt=""> Neha Patel</td><td>Silver</td><td>09:05 AM</td><td class="checked">Checked In</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </article>
+
+                    <article class="panel revenue">
+                        <div class="panel-heading">
+                            <h3>Revenue Overview</h3>
+                            <button>This Month <i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <p class="income">Rs. 2,45,000 <span>+15% <small>vs last month</small></span></p>
+                        <div class="bars" aria-label="Revenue by week">
+                            <div><i style="height:52%"></i><small>Week 1</small></div>
+                            <div><i style="height:62%"></i><small>Week 2</small></div>
+                            <div><i style="height:75%"></i><small>Week 3</small></div>
+                            <div><i style="height:91%"></i><small>Week 4</small></div>
+                        </div>
+                    </article>
+
+                    <article class="panel reminders" id="reminders">
+                        <h3>Upcoming Reminders</h3>
+                        <ul>
+                            <li><i class="far fa-clock"></i> Membership Expiring Today <strong>6 Members</strong></li>
+                            <li><i class="far fa-calendar-alt"></i> Trainer Meetings <strong>Today, 04:00 PM</strong></li>
+                            <li><i class="fas fa-tools"></i> Equipment Maintenance <strong>2 Items</strong></li>
+                            <li><i class="fas fa-wallet"></i> Pending Payments <strong>12 Members</strong></li>
+                        </ul>
+                        <a class="panel-button" href="#">View All Reminders</a>
+                    </article>
+                </section>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
