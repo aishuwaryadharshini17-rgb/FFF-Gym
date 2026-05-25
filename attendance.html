@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance | Flusion Flow Fitness</title>
+    <link href="img/logoo.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+</head>
+<body data-module="attendance">
+    <div class="dashboard-layout">
+        <div data-dashboard-sidebar></div>
+        <main class="module-page">
+            <div class="module-title">
+                <p>Daily Entry Log</p>
+                <h1>Attendance</h1>
+                <span>Monitor member check-ins and peak gym hours.</span>
+            </div>
+            <div class="module-sections">
+                <section class="module-section">
+                    <h2>Today's Check-ins</h2>
+                    <p>Live attendance count by time slot.</p>
+                    <div class="mini-stats">
+                        <div class="mini-stat"><small>Checked In</small><strong class="accent">178</strong></div>
+                        <div class="mini-stat"><small>Inside Now</small><strong>64</strong></div>
+                        <div class="mini-stat"><small>Guests</small><strong>11</strong></div>
+                    </div>
+                    <div class="progress-row"><div><span>Morning 05:00 - 10:00</span><span>86</span></div><div class="progress-track"><i style="width:78%"></i></div></div>
+                    <div class="progress-row"><div><span>Afternoon 10:00 - 04:00</span><span>39</span></div><div class="progress-track"><i style="width:36%"></i></div></div>
+                    <div class="progress-row"><div><span>Evening 04:00 - 09:00</span><span>53</span></div><div class="progress-track"><i style="width:56%"></i></div></div>
+                </section>
+                <section class="module-section">
+                    <h2>Recent Entries</h2>
+                    <p>Latest scans from the gym reception.</p>
+                    <table class="module-table">
+                        <thead><tr><th>Name</th><th>Time</th><th>Entry</th></tr></thead>
+                        <tbody>
+                            <tr><td>Sanjay M</td><td>09:12 AM</td><td><span class="pill">Checked In</span></td></tr>
+                            <tr><td>Meena P</td><td>09:17 AM</td><td><span class="pill">Checked In</span></td></tr>
+                            <tr><td>Rahul K</td><td>09:23 AM</td><td><span class="pill orange">Guest</span></td></tr>
+                            <tr><td>Asha R</td><td>09:31 AM</td><td><span class="pill">Checked In</span></td></tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="js/dashboard-nav.js"></script>
+</body>
+</html>

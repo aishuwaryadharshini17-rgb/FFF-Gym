@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments | Flusion Flow Fitness</title>
+    <link href="img/logoo.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+</head>
+<body data-module="payments">
+    <div class="dashboard-layout">
+        <div data-dashboard-sidebar></div>
+        <main class="module-page">
+            <div class="module-title">
+                <p>Billing Centre</p>
+                <h1>Payments</h1>
+                <span>Keep membership collections and pending dues on track.</span>
+            </div>
+            <div class="module-sections">
+                <section class="module-section">
+                    <h2>Payment Summary</h2>
+                    <p>This month's gym membership collections.</p>
+                    <div class="mini-stats">
+                        <div class="mini-stat"><small>Collected</small><strong class="accent">Rs. 2.45L</strong></div>
+                        <div class="mini-stat"><small>Pending</small><strong>Rs. 32K</strong></div>
+                        <div class="mini-stat"><small>Refund</small><strong>Rs. 4K</strong></div>
+                    </div>
+                    <div class="progress-row"><div><span>UPI Payments</span><span>58%</span></div><div class="progress-track"><i style="width:58%"></i></div></div>
+                    <div class="progress-row"><div><span>Card Payments</span><span>27%</span></div><div class="progress-track"><i style="width:27%"></i></div></div>
+                    <div class="progress-row"><div><span>Cash Payments</span><span>15%</span></div><div class="progress-track"><i style="width:15%"></i></div></div>
+                </section>
+                <section class="module-section">
+                    <h2>Recent Transactions</h2>
+                    <p>Membership invoices processed today.</p>
+                    <table class="module-table">
+                        <thead><tr><th>Member</th><th>Amount</th><th>Status</th></tr></thead>
+                        <tbody>
+                            <tr><td>Rahul G</td><td>Rs. 10,499</td><td><span class="pill">Paid</span></td></tr>
+                            <tr><td>Nisha R</td><td>Rs. 1,999</td><td><span class="pill">Paid</span></td></tr>
+                            <tr><td>Ganesh P</td><td>Rs. 18,999</td><td><span class="pill orange">Due</span></td></tr>
+                            <tr><td>Harini V</td><td>Rs. 1,999</td><td><span class="pill red">Failed</span></td></tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="js/dashboard-nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members | Flusion Flow Fitness</title>
+    <link href="img/logoo.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+</head>
+<body data-module="members">
+    <div class="dashboard-layout">
+        <div data-dashboard-sidebar></div>
+        <main class="module-page">
+            <div class="module-title">
+                <p>Member Management</p>
+                <h1>Members</h1>
+                <span>Track memberships, renewals and new gym registrations.</span>
+            </div>
+            <div class="module-sections">
+                <section class="module-section">
+                    <h2>Member Overview</h2>
+                    <p>Current member strength and subscription health.</p>
+                    <div class="mini-stats">
+                        <div class="mini-stat"><small>Total</small><strong>1,568</strong></div>
+                        <div class="mini-stat"><small>Active</small><strong class="accent">1,094</strong></div>
+                        <div class="mini-stat"><small>New Today</small><strong>08</strong></div>
+                    </div>
+                    <div class="progress-row"><div><span>Premium Members</span><span>68%</span></div><div class="progress-track"><i style="width:68%"></i></div></div>
+                    <div class="progress-row"><div><span>Gold Members</span><span>51%</span></div><div class="progress-track"><i style="width:51%"></i></div></div>
+                    <div class="progress-row"><div><span>Silver Members</span><span>34%</span></div><div class="progress-track"><i style="width:34%"></i></div></div>
+                </section>
+                <section class="module-section">
+                    <h2>Recent Registrations</h2>
+                    <p>Latest members enrolled in fitness plans.</p>
+                    <table class="module-table">
+                        <thead><tr><th>Member</th><th>Plan</th><th>Status</th></tr></thead>
+                        <tbody>
+                            <tr><td>Arun Kumar</td><td>Premium</td><td><span class="pill">Active</span></td></tr>
+                            <tr><td>Priya S</td><td>Gold</td><td><span class="pill">Active</span></td></tr>
+                            <tr><td>Vijay Raj</td><td>Monthly</td><td><span class="pill orange">New</span></td></tr>
+                            <tr><td>Divya R</td><td>Silver</td><td><span class="pill red">Renew</span></td></tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="js/dashboard-nav.js"></script>
+</body>
+</html>

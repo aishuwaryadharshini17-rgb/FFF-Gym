@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment | Flusion Flow Fitness</title>
+    <link href="img/logoo.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+</head>
+<body data-module="equipment">
+    <div class="dashboard-layout">
+        <div data-dashboard-sidebar></div>
+        <main class="module-page">
+            <div class="module-title">
+                <p>Facility Assets</p>
+                <h1>Equipment</h1>
+                <span>Monitor workout machines, safety checks and servicing.</span>
+            </div>
+            <div class="module-sections">
+                <section class="module-section">
+                    <h2>Equipment Status</h2>
+                    <p>Operational overview for the training floors.</p>
+                    <div class="mini-stats">
+                        <div class="mini-stat"><small>Total Units</small><strong>126</strong></div>
+                        <div class="mini-stat"><small>Available</small><strong class="accent">119</strong></div>
+                        <div class="mini-stat"><small>Service Due</small><strong>07</strong></div>
+                    </div>
+                    <ul class="module-list">
+                        <li><i class="fas fa-running"></i><div>Treadmills<small>Cardio Area - 18 units</small></div><strong>GOOD</strong></li>
+                        <li><i class="fas fa-dumbbell"></i><div>Smith Machines<small>Strength Area - 05 units</small></div><strong>GOOD</strong></li>
+                        <li><i class="fas fa-bicycle"></i><div>Spin Bikes<small>Studio B - 14 units</small></div><strong>SERVICE 2</strong></li>
+                    </ul>
+                </section>
+                <section class="module-section">
+                    <h2>Maintenance Queue</h2>
+                    <p>Service tasks requiring facility attention.</p>
+                    <table class="module-table">
+                        <thead><tr><th>Asset</th><th>Task</th><th>Priority</th></tr></thead>
+                        <tbody>
+                            <tr><td>Treadmill T-08</td><td>Belt check</td><td><span class="pill orange">Medium</span></td></tr>
+                            <tr><td>Bike B-03</td><td>Pedal replace</td><td><span class="pill red">High</span></td></tr>
+                            <tr><td>Cable C-02</td><td>Lubrication</td><td><span class="pill">Low</span></td></tr>
+                            <tr><td>Bench P-11</td><td>Padding</td><td><span class="pill orange">Medium</span></td></tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="js/dashboard-nav.js"></script>
+</body>
+</html>
