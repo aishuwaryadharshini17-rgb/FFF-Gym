@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl" data-theme="dark">
 
 <head>
     <meta charset="utf-8">
@@ -37,6 +37,7 @@
                 <a href="reports.html"><i class="far fa-chart-bar"></i> Reports</a>
                 <a href="messages.html"><i class="far fa-comment-dots"></i> Messages <b>5</b></a>
                 <a href="index.html"><i class="fas fa-home"></i> Website Home</a>
+                <a class="logout-link" href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
             </nav>
 
             <div class="upgrade">
@@ -58,6 +59,10 @@
                     <i class="fas fa-search"></i>
                     <input type="search" placeholder="Search members, classes...">
                 </label>
+                <div class="header-settings" aria-label="Display settings">
+                    <button class="theme-toggle" type="button" data-dashboard-theme aria-label="Toggle dark mode"><i class="fas fa-moon"></i><span>Dark</span></button>
+                    <button class="direction-toggle" type="button" data-dashboard-direction aria-label="Toggle RTL direction"><span>RTL</span></button>
+                </div>
                 <button class="alert" aria-label="Notifications">
                     <i class="far fa-bell"></i><span>3</span>
                 </button>
@@ -202,6 +207,7 @@
             </section>
         </main>
     </div>
+    <script src="js/dashboard-settings.js"></script>
 </body>
 
 </html>
